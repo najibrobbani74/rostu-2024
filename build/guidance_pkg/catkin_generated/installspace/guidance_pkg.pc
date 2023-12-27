@@ -1,0 +1,8 @@
+prefix=/home/tech-sas/Rostu_2024/install
+
+Name: guidance_pkg
+Description: Description of guidance_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
