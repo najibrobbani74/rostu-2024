@@ -123,8 +123,8 @@ while(True):
     int(fps)
     #print("fps {0} xbola {1} ybola {2} sudut {3}".format(int(fps), int(xbola), int(ybola), int(sudut)))
 
-    esc = cv2.waitKey(5) & 0xFF
-    if esc == 27:
+    k = cv2.waitKey(5) & 0xFF
+    if k == 27:
         break
 
 cap.release()
