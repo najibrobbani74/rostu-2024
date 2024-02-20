@@ -1,0 +1,20 @@
+<launch>
+  <node
+    pkg="model"
+    type="camera.py"
+    name="camera" 
+    output="screen"
+  />
+  <node
+    pkg="model"
+    type="kicker.py"
+    name="kicker" 
+    output="screen"
+  />
+  <node
+    pkg="model"
+    type="wheel.py"
+    name="wheel" 
+    output="screen"
+  />
+</launch>

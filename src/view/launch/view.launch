@@ -1,0 +1,14 @@
+<launch>
+  <node
+    pkg="view"
+    type="manual.py"
+    name="manual" 
+    output="screen"
+  />
+  <node
+    pkg="view"
+    type="video.py"
+    name="video" 
+    output="screen"
+  />
+</launch>

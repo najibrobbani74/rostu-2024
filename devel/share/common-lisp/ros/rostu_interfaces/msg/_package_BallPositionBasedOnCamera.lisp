@@ -1,0 +1,14 @@
+(cl:in-package rostu_interfaces-msg)
+(cl:export '(DISTANCE-VAL
+          DISTANCE
+          ANGLE-VAL
+          ANGLE
+          X_ON_CAMERA-VAL
+          X_ON_CAMERA
+          Y_ON_CAMERA-VAL
+          Y_ON_CAMERA
+          X_REAL-VAL
+          X_REAL
+          Y_REAL-VAL
+          Y_REAL
+))

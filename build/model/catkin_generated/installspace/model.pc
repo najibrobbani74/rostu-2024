@@ -1,0 +1,8 @@
+prefix=/media/najibrobbani/Data/program/code/project/ros/rostu/install
+
+Name: model
+Description: Description of model
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

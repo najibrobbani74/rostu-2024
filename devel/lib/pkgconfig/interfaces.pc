@@ -1,0 +1,8 @@
+prefix=/media/najibrobbani/Data/program/code/project/ros/rostu/devel
+
+Name: interfaces
+Description: Description of interfaces
+Version: 0.0.0
+Cflags: -I/media/najibrobbani/Data/program/code/project/ros/rostu/devel/include
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs message_runtime
