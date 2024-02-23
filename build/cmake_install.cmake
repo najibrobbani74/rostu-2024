@@ -134,6 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/media/najibrobbani/Data/program/code/project/ros/rostu/build/rostu_interfaces/cmake_install.cmake")
   include("/media/najibrobbani/Data/program/code/project/ros/rostu/build/controller/cmake_install.cmake")
   include("/media/najibrobbani/Data/program/code/project/ros/rostu/build/model/cmake_install.cmake")
+  include("/media/najibrobbani/Data/program/code/project/ros/rostu/build/rostu2024/cmake_install.cmake")
   include("/media/najibrobbani/Data/program/code/project/ros/rostu/build/view/cmake_install.cmake")
 
 endif()

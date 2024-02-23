@@ -1,2 +1,2 @@
-controller:model:rostu_interfaces:view
+controller:model:rostu2024:rostu_interfaces:view
 -DCATKIN_DEVEL_PREFIX=/media/najibrobbani/Data/program/code/project/ros/rostu/devel -DCMAKE_INSTALL_PREFIX=/media/najibrobbani/Data/program/code/project/ros/rostu/install -G Unix Makefiles

@@ -1,0 +1,26 @@
+<launch>
+  <node
+    pkg="rostu2024"
+    type="manual_ui.py"
+    name="manual_ui"
+    output="screen"
+  />
+  <node
+    pkg="view"
+    type="video.py"
+    name="video"
+    output="screen"
+  />
+</launch>
+<!-- <launch>
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)"/>
+  <arg name="name_space" default="t1"/>
+
+  <group ns = "$(arg name_space)">
+    <param name="model" value="$(arg model)"/>
+    <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop"
+output="screen">
+    </node>
+  </group>
+
+</launch> -->

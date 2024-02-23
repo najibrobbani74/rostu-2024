@@ -609,6 +609,253 @@ std_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
+#=============================================================================
+# Target rules for targets named rostu2024_gennodejs
+
+# Build rule for target.
+rostu2024_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024_gennodejs
+.PHONY : rostu2024_gennodejs
+
+# fast build rule for target.
+rostu2024_gennodejs/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_gennodejs.dir/build.make rostu2024/CMakeFiles/rostu2024_gennodejs.dir/build
+.PHONY : rostu2024_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named rostu2024_generate_messages_nodejs
+
+# Build rule for target.
+rostu2024_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024_generate_messages_nodejs
+.PHONY : rostu2024_generate_messages_nodejs
+
+# fast build rule for target.
+rostu2024_generate_messages_nodejs/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/build
+.PHONY : rostu2024_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rostu2024_generate_messages_py
+
+# Build rule for target.
+rostu2024_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024_generate_messages_py
+.PHONY : rostu2024_generate_messages_py
+
+# fast build rule for target.
+rostu2024_generate_messages_py/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/build
+.PHONY : rostu2024_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rostu2024_genlisp
+
+# Build rule for target.
+rostu2024_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024_genlisp
+.PHONY : rostu2024_genlisp
+
+# fast build rule for target.
+rostu2024_genlisp/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_genlisp.dir/build.make rostu2024/CMakeFiles/rostu2024_genlisp.dir/build
+.PHONY : rostu2024_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named rostu2024_generate_messages_lisp
+
+# Build rule for target.
+rostu2024_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024_generate_messages_lisp
+.PHONY : rostu2024_generate_messages_lisp
+
+# fast build rule for target.
+rostu2024_generate_messages_lisp/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/build
+.PHONY : rostu2024_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _rostu2024_generate_messages_check_deps_Wheel
+
+# Build rule for target.
+_rostu2024_generate_messages_check_deps_Wheel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rostu2024_generate_messages_check_deps_Wheel
+.PHONY : _rostu2024_generate_messages_check_deps_Wheel
+
+# fast build rule for target.
+_rostu2024_generate_messages_check_deps_Wheel/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/build
+.PHONY : _rostu2024_generate_messages_check_deps_Wheel/fast
+
+#=============================================================================
+# Target rules for targets named _rostu2024_generate_messages_check_deps_DribbleModule
+
+# Build rule for target.
+_rostu2024_generate_messages_check_deps_DribbleModule: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rostu2024_generate_messages_check_deps_DribbleModule
+.PHONY : _rostu2024_generate_messages_check_deps_DribbleModule
+
+# fast build rule for target.
+_rostu2024_generate_messages_check_deps_DribbleModule/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/build
+.PHONY : _rostu2024_generate_messages_check_deps_DribbleModule/fast
+
+#=============================================================================
+# Target rules for targets named _rostu2024_generate_messages_check_deps_NavigationSetting
+
+# Build rule for target.
+_rostu2024_generate_messages_check_deps_NavigationSetting: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rostu2024_generate_messages_check_deps_NavigationSetting
+.PHONY : _rostu2024_generate_messages_check_deps_NavigationSetting
+
+# fast build rule for target.
+_rostu2024_generate_messages_check_deps_NavigationSetting/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/build
+.PHONY : _rostu2024_generate_messages_check_deps_NavigationSetting/fast
+
+#=============================================================================
+# Target rules for targets named rostu2024_gencpp
+
+# Build rule for target.
+rostu2024_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024_gencpp
+.PHONY : rostu2024_gencpp
+
+# fast build rule for target.
+rostu2024_gencpp/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_gencpp.dir/build.make rostu2024/CMakeFiles/rostu2024_gencpp.dir/build
+.PHONY : rostu2024_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named rostu2024_genpy
+
+# Build rule for target.
+rostu2024_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024_genpy
+.PHONY : rostu2024_genpy
+
+# fast build rule for target.
+rostu2024_genpy/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_genpy.dir/build.make rostu2024/CMakeFiles/rostu2024_genpy.dir/build
+.PHONY : rostu2024_genpy/fast
+
+#=============================================================================
+# Target rules for targets named rostu2024_generate_messages
+
+# Build rule for target.
+rostu2024_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024_generate_messages
+.PHONY : rostu2024_generate_messages
+
+# fast build rule for target.
+rostu2024_generate_messages/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages.dir/build
+.PHONY : rostu2024_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named _rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera
+
+# Build rule for target.
+_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera
+.PHONY : _rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera
+
+# fast build rule for target.
+_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/build
+.PHONY : _rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera/fast
+
+#=============================================================================
+# Target rules for targets named _rostu2024_generate_messages_check_deps_KickerModule
+
+# Build rule for target.
+_rostu2024_generate_messages_check_deps_KickerModule: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rostu2024_generate_messages_check_deps_KickerModule
+.PHONY : _rostu2024_generate_messages_check_deps_KickerModule
+
+# fast build rule for target.
+_rostu2024_generate_messages_check_deps_KickerModule/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/build
+.PHONY : _rostu2024_generate_messages_check_deps_KickerModule/fast
+
+#=============================================================================
+# Target rules for targets named _rostu2024_generate_messages_check_deps_KickerSetting
+
+# Build rule for target.
+_rostu2024_generate_messages_check_deps_KickerSetting: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rostu2024_generate_messages_check_deps_KickerSetting
+.PHONY : _rostu2024_generate_messages_check_deps_KickerSetting
+
+# fast build rule for target.
+_rostu2024_generate_messages_check_deps_KickerSetting/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/build
+.PHONY : _rostu2024_generate_messages_check_deps_KickerSetting/fast
+
+#=============================================================================
+# Target rules for targets named _rostu2024_generate_messages_check_deps_RobotStatus
+
+# Build rule for target.
+_rostu2024_generate_messages_check_deps_RobotStatus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rostu2024_generate_messages_check_deps_RobotStatus
+.PHONY : _rostu2024_generate_messages_check_deps_RobotStatus
+
+# fast build rule for target.
+_rostu2024_generate_messages_check_deps_RobotStatus/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/build
+.PHONY : _rostu2024_generate_messages_check_deps_RobotStatus/fast
+
+#=============================================================================
+# Target rules for targets named _rostu2024_generate_messages_check_deps_DribbleSetting
+
+# Build rule for target.
+_rostu2024_generate_messages_check_deps_DribbleSetting: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rostu2024_generate_messages_check_deps_DribbleSetting
+.PHONY : _rostu2024_generate_messages_check_deps_DribbleSetting
+
+# fast build rule for target.
+_rostu2024_generate_messages_check_deps_DribbleSetting/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/build
+.PHONY : _rostu2024_generate_messages_check_deps_DribbleSetting/fast
+
+#=============================================================================
+# Target rules for targets named rostu2024_generate_messages_eus
+
+# Build rule for target.
+rostu2024_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024_generate_messages_eus
+.PHONY : rostu2024_generate_messages_eus
+
+# fast build rule for target.
+rostu2024_generate_messages_eus/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/build
+.PHONY : rostu2024_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rostu2024_generate_messages_cpp
+
+# Build rule for target.
+rostu2024_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024_generate_messages_cpp
+.PHONY : rostu2024_generate_messages_cpp
+
+# fast build rule for target.
+rostu2024_generate_messages_cpp/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/build
+.PHONY : rostu2024_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rostu2024_geneus
+
+# Build rule for target.
+rostu2024_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024_geneus
+.PHONY : rostu2024_geneus
+
+# fast build rule for target.
+rostu2024_geneus/fast:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_geneus.dir/build.make rostu2024/CMakeFiles/rostu2024_geneus.dir/build
+.PHONY : rostu2024_geneus/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -656,6 +903,25 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... rostu2024_gennodejs"
+	@echo "... rostu2024_generate_messages_nodejs"
+	@echo "... rostu2024_generate_messages_py"
+	@echo "... rostu2024_genlisp"
+	@echo "... rostu2024_generate_messages_lisp"
+	@echo "... _rostu2024_generate_messages_check_deps_Wheel"
+	@echo "... _rostu2024_generate_messages_check_deps_DribbleModule"
+	@echo "... _rostu2024_generate_messages_check_deps_NavigationSetting"
+	@echo "... rostu2024_gencpp"
+	@echo "... rostu2024_genpy"
+	@echo "... rostu2024_generate_messages"
+	@echo "... _rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera"
+	@echo "... _rostu2024_generate_messages_check_deps_KickerModule"
+	@echo "... _rostu2024_generate_messages_check_deps_KickerSetting"
+	@echo "... _rostu2024_generate_messages_check_deps_RobotStatus"
+	@echo "... _rostu2024_generate_messages_check_deps_DribbleSetting"
+	@echo "... rostu2024_generate_messages_eus"
+	@echo "... rostu2024_generate_messages_cpp"
+	@echo "... rostu2024_geneus"
 .PHONY : help
 
 

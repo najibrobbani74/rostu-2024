@@ -513,6 +513,12 @@ rospy_DIR:PATH=/opt/ros/noetic/share/rospy/cmake
 rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
 
 //Value Computed by CMake
+rostu2024_BINARY_DIR:STATIC=/media/najibrobbani/Data/program/code/project/ros/rostu/build/rostu2024
+
+//Value Computed by CMake
+rostu2024_SOURCE_DIR:STATIC=/media/najibrobbani/Data/program/code/project/ros/rostu/src/rostu2024
+
+//Value Computed by CMake
 rostu_interfaces_BINARY_DIR:STATIC=/media/najibrobbani/Data/program/code/project/ros/rostu/build/rostu_interfaces
 
 //Value Computed by CMake
@@ -678,7 +684,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1,0 +1,26 @@
+<launch>
+    <node
+      pkg="rostu2024"
+      type="manual_node_ui.py"
+      name="manual_ui"
+      output="screen"
+    />
+    <node
+      pkg="rostu2024"
+      type="wheel.py"
+      name="wheel"
+      output="screen"
+    />
+    <node
+      pkg="rostu2024"
+      type="kicker.py"
+      name="kicker"
+      output="screen"
+    />
+    <node
+      pkg="rostu2024"
+      type="dribble.py"
+      name="dribble"
+      output="screen"
+    />
+  </launch>

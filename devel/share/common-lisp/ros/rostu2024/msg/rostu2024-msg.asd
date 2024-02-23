@@ -1,0 +1,23 @@
+
+(cl:in-package :asdf)
+
+(defsystem "rostu2024-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils )
+  :components ((:file "_package")
+    (:file "BallPositionBasedOnCamera" :depends-on ("_package_BallPositionBasedOnCamera"))
+    (:file "_package_BallPositionBasedOnCamera" :depends-on ("_package"))
+    (:file "DribbleModule" :depends-on ("_package_DribbleModule"))
+    (:file "_package_DribbleModule" :depends-on ("_package"))
+    (:file "DribbleSetting" :depends-on ("_package_DribbleSetting"))
+    (:file "_package_DribbleSetting" :depends-on ("_package"))
+    (:file "KickerModule" :depends-on ("_package_KickerModule"))
+    (:file "_package_KickerModule" :depends-on ("_package"))
+    (:file "KickerSetting" :depends-on ("_package_KickerSetting"))
+    (:file "_package_KickerSetting" :depends-on ("_package"))
+    (:file "NavigationSetting" :depends-on ("_package_NavigationSetting"))
+    (:file "_package_NavigationSetting" :depends-on ("_package"))
+    (:file "RobotStatus" :depends-on ("_package_RobotStatus"))
+    (:file "_package_RobotStatus" :depends-on ("_package"))
+    (:file "Wheel" :depends-on ("_package_Wheel"))
+    (:file "_package_Wheel" :depends-on ("_package"))
+  ))

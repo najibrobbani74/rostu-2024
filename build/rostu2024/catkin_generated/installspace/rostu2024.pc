@@ -1,0 +1,8 @@
+prefix=/media/najibrobbani/Data/program/code/project/ros/rostu/install
+
+Name: rostu2024
+Description: Description of rostu2024
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs message_runtime

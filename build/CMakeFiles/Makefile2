@@ -57,6 +57,7 @@ all: gtest/all
 all: rostu_interfaces/all
 all: controller/all
 all: model/all
+all: rostu2024/all
 all: view/all
 
 .PHONY : all
@@ -66,6 +67,7 @@ preinstall: gtest/preinstall
 preinstall: rostu_interfaces/preinstall
 preinstall: controller/preinstall
 preinstall: model/preinstall
+preinstall: rostu2024/preinstall
 preinstall: view/preinstall
 
 .PHONY : preinstall
@@ -80,6 +82,7 @@ clean: gtest/clean
 clean: rostu_interfaces/clean
 clean: controller/clean
 clean: model/clean
+clean: rostu2024/clean
 clean: view/clean
 
 .PHONY : clean
@@ -180,6 +183,42 @@ model/preinstall:
 model/clean:
 
 .PHONY : model/clean
+
+#=============================================================================
+# Directory level rules for directory rostu2024
+
+# Recursive "all" directory target.
+rostu2024/all: rostu2024/CMakeFiles/rostu2024_generate_messages.dir/all
+
+.PHONY : rostu2024/all
+
+# Recursive "preinstall" directory target.
+rostu2024/preinstall:
+
+.PHONY : rostu2024/preinstall
+
+# Recursive "clean" directory target.
+rostu2024/clean: rostu2024/CMakeFiles/rostu2024_gennodejs.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/rostu2024_genlisp.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/rostu2024_gencpp.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/rostu2024_genpy.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/rostu2024_generate_messages.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/clean
+rostu2024/clean: rostu2024/CMakeFiles/rostu2024_geneus.dir/clean
+
+.PHONY : rostu2024/clean
 
 #=============================================================================
 # Directory level rules for directory rostu_interfaces
@@ -521,7 +560,7 @@ rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_py.dir/all: rostu
 rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_py.dir/all: rostu_interfaces/CMakeFiles/_rostu_interfaces_generate_messages_check_deps_DribbleModule.dir/all
 	$(MAKE) -f rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_py.dir/build.make rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_py.dir/depend
 	$(MAKE) -f rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_py.dir/build.make rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=42,43,44,45,46,47,48,49,50 "Built target rostu_interfaces_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=84,85,86,87,88,89,90,91,92 "Built target rostu_interfaces_generate_messages_py"
 .PHONY : rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -582,7 +621,7 @@ rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_nodejs.dir/all: r
 rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_nodejs.dir/all: rostu_interfaces/CMakeFiles/_rostu_interfaces_generate_messages_check_deps_DribbleModule.dir/all
 	$(MAKE) -f rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_nodejs.dir/build.make rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_nodejs.dir/depend
 	$(MAKE) -f rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_nodejs.dir/build.make rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=34,35,36,37,38,39,40,41 "Built target rostu_interfaces_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=76,77,78,79,80,81,82,83 "Built target rostu_interfaces_generate_messages_nodejs"
 .PHONY : rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -616,7 +655,7 @@ rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_lisp.dir/all: ros
 rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_lisp.dir/all: rostu_interfaces/CMakeFiles/_rostu_interfaces_generate_messages_check_deps_DribbleModule.dir/all
 	$(MAKE) -f rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_lisp.dir/build.make rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_lisp.dir/depend
 	$(MAKE) -f rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_lisp.dir/build.make rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33 "Built target rostu_interfaces_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=68,69,70,71,72,73,74,75 "Built target rostu_interfaces_generate_messages_lisp"
 .PHONY : rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -843,7 +882,7 @@ rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_eus.dir/all: rost
 rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_eus.dir/all: rostu_interfaces/CMakeFiles/_rostu_interfaces_generate_messages_check_deps_DribbleModule.dir/all
 	$(MAKE) -f rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_eus.dir/build.make rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_eus.dir/depend
 	$(MAKE) -f rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_eus.dir/build.make rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=17,18,19,20,21,22,23,24,25 "Built target rostu_interfaces_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=59,60,61,62,63,64,65,66,67 "Built target rostu_interfaces_generate_messages_eus"
 .PHONY : rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1012,7 +1051,7 @@ rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_cpp.dir/all: rost
 rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_cpp.dir/all: rostu_interfaces/CMakeFiles/_rostu_interfaces_generate_messages_check_deps_DribbleModule.dir/all
 	$(MAKE) -f rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_cpp.dir/build.make rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_cpp.dir/depend
 	$(MAKE) -f rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_cpp.dir/build.make rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target rostu_interfaces_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58 "Built target rostu_interfaces_generate_messages_cpp"
 .PHONY : rostu_interfaces/CMakeFiles/rostu_interfaces_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1193,6 +1232,563 @@ std_msgs_generate_messages_cpp: controller/CMakeFiles/std_msgs_generate_messages
 controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
 	$(MAKE) -f controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 .PHONY : controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/rostu2024_gennodejs.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/rostu2024_gennodejs.dir/all: rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_gennodejs.dir/build.make rostu2024/CMakeFiles/rostu2024_gennodejs.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_gennodejs.dir/build.make rostu2024/CMakeFiles/rostu2024_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target rostu2024_gennodejs"
+.PHONY : rostu2024/CMakeFiles/rostu2024_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/rostu2024_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/rostu2024_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/rostu2024_gennodejs.dir/rule
+
+# Convenience name for target.
+rostu2024_gennodejs: rostu2024/CMakeFiles/rostu2024_gennodejs.dir/rule
+
+.PHONY : rostu2024_gennodejs
+
+# clean rule for target.
+rostu2024/CMakeFiles/rostu2024_gennodejs.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_gennodejs.dir/build.make rostu2024/CMakeFiles/rostu2024_gennodejs.dir/clean
+.PHONY : rostu2024/CMakeFiles/rostu2024_gennodejs.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all: controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/all
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=34,35,36,37,38,39,40,41 "Built target rostu2024_generate_messages_nodejs"
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rostu2024_generate_messages_nodejs: rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/rule
+
+.PHONY : rostu2024_generate_messages_nodejs
+
+# clean rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/clean
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all: controller/CMakeFiles/std_msgs_generate_messages_py.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/all
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=42,43,44,45,46,47,48,49,50 "Built target rostu2024_generate_messages_py"
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rostu2024_generate_messages_py: rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/rule
+
+.PHONY : rostu2024_generate_messages_py
+
+# clean rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/clean
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/rostu2024_genlisp.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/rostu2024_genlisp.dir/all: rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_genlisp.dir/build.make rostu2024/CMakeFiles/rostu2024_genlisp.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_genlisp.dir/build.make rostu2024/CMakeFiles/rostu2024_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target rostu2024_genlisp"
+.PHONY : rostu2024/CMakeFiles/rostu2024_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/rostu2024_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/rostu2024_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/rostu2024_genlisp.dir/rule
+
+# Convenience name for target.
+rostu2024_genlisp: rostu2024/CMakeFiles/rostu2024_genlisp.dir/rule
+
+.PHONY : rostu2024_genlisp
+
+# clean rule for target.
+rostu2024/CMakeFiles/rostu2024_genlisp.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_genlisp.dir/build.make rostu2024/CMakeFiles/rostu2024_genlisp.dir/clean
+.PHONY : rostu2024/CMakeFiles/rostu2024_genlisp.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all: controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/all
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33 "Built target rostu2024_generate_messages_lisp"
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rostu2024_generate_messages_lisp: rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/rule
+
+.PHONY : rostu2024_generate_messages_lisp
+
+# clean rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/clean
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/all:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target _rostu2024_generate_messages_check_deps_Wheel"
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/rule
+
+# Convenience name for target.
+_rostu2024_generate_messages_check_deps_Wheel: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/rule
+
+.PHONY : _rostu2024_generate_messages_check_deps_Wheel
+
+# clean rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/clean
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/all:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target _rostu2024_generate_messages_check_deps_DribbleModule"
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/rule
+
+# Convenience name for target.
+_rostu2024_generate_messages_check_deps_DribbleModule: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/rule
+
+.PHONY : _rostu2024_generate_messages_check_deps_DribbleModule
+
+# clean rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/clean
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/all:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target _rostu2024_generate_messages_check_deps_NavigationSetting"
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/rule
+
+# Convenience name for target.
+_rostu2024_generate_messages_check_deps_NavigationSetting: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/rule
+
+.PHONY : _rostu2024_generate_messages_check_deps_NavigationSetting
+
+# clean rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/clean
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/rostu2024_gencpp.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/rostu2024_gencpp.dir/all: rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_gencpp.dir/build.make rostu2024/CMakeFiles/rostu2024_gencpp.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_gencpp.dir/build.make rostu2024/CMakeFiles/rostu2024_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target rostu2024_gencpp"
+.PHONY : rostu2024/CMakeFiles/rostu2024_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/rostu2024_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/rostu2024_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/rostu2024_gencpp.dir/rule
+
+# Convenience name for target.
+rostu2024_gencpp: rostu2024/CMakeFiles/rostu2024_gencpp.dir/rule
+
+.PHONY : rostu2024_gencpp
+
+# clean rule for target.
+rostu2024/CMakeFiles/rostu2024_gencpp.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_gencpp.dir/build.make rostu2024/CMakeFiles/rostu2024_gencpp.dir/clean
+.PHONY : rostu2024/CMakeFiles/rostu2024_gencpp.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/rostu2024_genpy.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/rostu2024_genpy.dir/all: rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_genpy.dir/build.make rostu2024/CMakeFiles/rostu2024_genpy.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_genpy.dir/build.make rostu2024/CMakeFiles/rostu2024_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target rostu2024_genpy"
+.PHONY : rostu2024/CMakeFiles/rostu2024_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/rostu2024_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/rostu2024_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/rostu2024_genpy.dir/rule
+
+# Convenience name for target.
+rostu2024_genpy: rostu2024/CMakeFiles/rostu2024_genpy.dir/rule
+
+.PHONY : rostu2024_genpy
+
+# clean rule for target.
+rostu2024/CMakeFiles/rostu2024_genpy.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_genpy.dir/build.make rostu2024/CMakeFiles/rostu2024_genpy.dir/clean
+.PHONY : rostu2024/CMakeFiles/rostu2024_genpy.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/rostu2024_generate_messages.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages.dir/all: rostu2024/CMakeFiles/rostu2024_generate_messages_nodejs.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages.dir/all: rostu2024/CMakeFiles/rostu2024_generate_messages_py.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages.dir/all: rostu2024/CMakeFiles/rostu2024_generate_messages_lisp.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages.dir/all: rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages.dir/all: rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target rostu2024_generate_messages"
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 42
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/rostu2024_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages.dir/rule
+
+# Convenience name for target.
+rostu2024_generate_messages: rostu2024/CMakeFiles/rostu2024_generate_messages.dir/rule
+
+.PHONY : rostu2024_generate_messages
+
+# clean rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages.dir/clean
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/all:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target _rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera"
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/rule
+
+# Convenience name for target.
+_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/rule
+
+.PHONY : _rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera
+
+# clean rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/clean
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/all:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target _rostu2024_generate_messages_check_deps_KickerModule"
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/rule
+
+# Convenience name for target.
+_rostu2024_generate_messages_check_deps_KickerModule: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/rule
+
+.PHONY : _rostu2024_generate_messages_check_deps_KickerModule
+
+# clean rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/clean
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/all:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target _rostu2024_generate_messages_check_deps_KickerSetting"
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/rule
+
+# Convenience name for target.
+_rostu2024_generate_messages_check_deps_KickerSetting: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/rule
+
+.PHONY : _rostu2024_generate_messages_check_deps_KickerSetting
+
+# clean rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/clean
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/all:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target _rostu2024_generate_messages_check_deps_RobotStatus"
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/rule
+
+# Convenience name for target.
+_rostu2024_generate_messages_check_deps_RobotStatus: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/rule
+
+.PHONY : _rostu2024_generate_messages_check_deps_RobotStatus
+
+# clean rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/clean
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/all:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target _rostu2024_generate_messages_check_deps_DribbleSetting"
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/rule
+
+# Convenience name for target.
+_rostu2024_generate_messages_check_deps_DribbleSetting: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/rule
+
+.PHONY : _rostu2024_generate_messages_check_deps_DribbleSetting
+
+# clean rule for target.
+rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/build.make rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/clean
+.PHONY : rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all: controller/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/all
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=17,18,19,20,21,22,23,24,25 "Built target rostu2024_generate_messages_eus"
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rostu2024_generate_messages_eus: rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/rule
+
+.PHONY : rostu2024_generate_messages_eus
+
+# clean rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/clean
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all: controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_Wheel.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleModule.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_NavigationSetting.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_BallPositionBasedOnCamera.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerModule.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_KickerSetting.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_RobotStatus.dir/all
+rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all: rostu2024/CMakeFiles/_rostu2024_generate_messages_check_deps_DribbleSetting.dir/all
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target rostu2024_generate_messages_cpp"
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rostu2024_generate_messages_cpp: rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/rule
+
+.PHONY : rostu2024_generate_messages_cpp
+
+# clean rule for target.
+rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/build.make rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/clean
+.PHONY : rostu2024/CMakeFiles/rostu2024_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target rostu2024/CMakeFiles/rostu2024_geneus.dir
+
+# All Build rule for target.
+rostu2024/CMakeFiles/rostu2024_geneus.dir/all: rostu2024/CMakeFiles/rostu2024_generate_messages_eus.dir/all
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_geneus.dir/build.make rostu2024/CMakeFiles/rostu2024_geneus.dir/depend
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_geneus.dir/build.make rostu2024/CMakeFiles/rostu2024_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles --progress-num= "Built target rostu2024_geneus"
+.PHONY : rostu2024/CMakeFiles/rostu2024_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+rostu2024/CMakeFiles/rostu2024_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 rostu2024/CMakeFiles/rostu2024_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/najibrobbani/Data/program/code/project/ros/rostu/build/CMakeFiles 0
+.PHONY : rostu2024/CMakeFiles/rostu2024_geneus.dir/rule
+
+# Convenience name for target.
+rostu2024_geneus: rostu2024/CMakeFiles/rostu2024_geneus.dir/rule
+
+.PHONY : rostu2024_geneus
+
+# clean rule for target.
+rostu2024/CMakeFiles/rostu2024_geneus.dir/clean:
+	$(MAKE) -f rostu2024/CMakeFiles/rostu2024_geneus.dir/build.make rostu2024/CMakeFiles/rostu2024_geneus.dir/clean
+.PHONY : rostu2024/CMakeFiles/rostu2024_geneus.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
